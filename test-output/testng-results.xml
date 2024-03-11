@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-11T16:04:22 EET" name="Suite" finished-at="2024-03-11T16:04:32 EET" duration-ms="9735">
+    <groups>
+    </groups>
+    <test started-at="2024-03-11T16:04:22 EET" name="Testonchrome" finished-at="2024-03-11T16:04:32 EET" duration-ms="9735">
+      <class name="testCases.ExtentReportsTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCases.ExtentReportsTest@3c19aaa5]" started-at="2024-03-11T16:04:22 EET" name="beforeSuite" finished-at="2024-03-11T16:04:22 EET" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCases.ExtentReportsTest@3c19aaa5]" started-at="2024-03-11T16:04:32 EET" name="afterSuite" finished-at="2024-03-11T16:04:32 EET" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testCases.ExtentReportsTest -->
+      <class name="testCases.RestAssuredTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testCases.RestAssuredTest@2a4fb17b]" started-at="2024-03-11T16:04:22 EET" name="openBrowser" finished-at="2024-03-11T16:04:28 EET" duration-ms="5860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testCases.RestAssuredTest.test_Post()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="test_Post()[pri:0, instance:testCases.RestAssuredTest@2a4fb17b]" started-at="2024-03-11T16:04:28 EET" name="test_Post" finished-at="2024-03-11T16:04:28 EET" duration-ms="307" status="FAIL">
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at testCases.RestAssuredTest.test_Post(RestAssuredTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static org.apache.http.conn.ssl.X509HostnameVerifier.getSimpleName() is applicable for argument types: () values: []
+at groovy.lang.MetaClassImpl.invokeStaticMissingMethod(MetaClassImpl.java:1500)
+at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1486)
+at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.call(StaticMetaClassSite.java:53)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+at io.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:21)
+at io.restassured.config.SSLConfig.<init>(SSLConfig.java:192)
+at io.restassured.config.SSLConfig.<init>(SSLConfig.java:184)
+at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Post -->
+        <test-method is-config="true" signature="closeBrowser(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:testCases.RestAssuredTest@2a4fb17b]" started-at="2024-03-11T16:04:28 EET" name="closeBrowser" finished-at="2024-03-11T16:04:32 EET" duration-ms="3528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.RestAssuredTest.test_Post()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_Post status=FAILURE method=RestAssuredTest.test_Post()[pri:0, instance:testCases.RestAssuredTest@2a4fb17b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.RestAssuredTest -->
+    </test> <!-- Testonchrome -->
+  </suite> <!-- Suite -->
+</testng-results>
