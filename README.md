@@ -18,7 +18,8 @@ Run project from TestNg.xml
 
 Allure Report and Extent Report was added to project for Reporting Tools
 
-Technologies Used:
+
+# Technologies Used:
 • Selenium WebDriver - v3.14 (Open Source)
 • JDK 1.8 (Java Development Kit)
 • TestNG (Test Unit Framework)
