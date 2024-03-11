@@ -1,6 +1,6 @@
 # FlairsTechAssignment
 
-Select Master
+Select Master Branch
 
 Clone Project to your PC
 
